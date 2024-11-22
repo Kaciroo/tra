@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AFNP</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> <!--Font txt-->
+</head>
+<body>
+    <header>
+        <div id="box">
+            <h1><img src="imgs/logo.png" alt="logo of Barber Shop"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="product.html">Produtos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <label for="name">Nome: </label>
+                <input type="text" id="name" class="input-pattern" required>
+
+                <label for="date">date</label>
+                <input type="date" id="date" name="date">
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" class="input-pattern" required>
+
+                <label for="tel">Telefone: </label>
+                <input type="tell" id="tel" class="input-pattern" required>
+
+                <label for="message">Mensagem: </label>
+                <textarea id="message" cols="90" rows="10" class="input-pattern"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Como você prefere entarem contato?</legend>
+                <label for="email-radio"><input type="radio" id="email-radio" value="email" name="radio-contact" checked>Email</label>
+
+                <label for="telephone-radio"><input type="radio" id="telephone-radio" value="telephone" name="radio-contact">Telefone</label>
+
+                <label for="whatsapp-radio"><input type="radio" id="whatsapp-radio" value="whatsapp" name="radio-contact">Whatsapp</label>
+                
+            </fieldset>
+
+            <label class="checkbox"> <input type="checkbox" checked> gostaria de receber nossas novidades por e-mail?</label>
+            
+            <fieldset>
+                <legend>que horas você prefere? </legend>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </fieldset>
+
+            <input type="submit" value="save" class="save">
+        </form>
+        
+        <table>
+            <thead>
+                <th>Dia</th>
+                <th>horas</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>seg - sex</td>
+                    <td>08 ~ 18</td>
+                </tr>
+                <tr>
+                    <td>seb - dom</td>
+                    <td>08 ~ 15</td>
+                </tr>
+                <tr>
+                    <td>feriados</td>
+                    <td>08 ~ 15</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="imgs/logo-white.png" alt="logo tipo da barbearia">
+        <p class="copyright">&copy; N.F.A.P</p> <!--&copy icon of (unicode)-->
+    </footer>
+</body>
+</html>
